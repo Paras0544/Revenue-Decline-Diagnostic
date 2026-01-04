@@ -1,53 +1,66 @@
-📉 Revenue Decline Diagnostic – E-commerce Analytics Project
-📌 Project Overview
+# 📉 Revenue Decline Diagnostic  
+### E-commerce Analytics & Business Diagnostics Project
 
-This project performs a diagnostic analysis to identify the root causes of revenue decline in a simulated e-commerce business using Python, SQL, and Power BI.
-The analysis follows a structured consulting-style framework to move from symptom → diagnosis → insight.
+---
 
-🎯 Business Problem
+## 📌 Project Overview
 
-An e-commerce company observed a sharp revenue decline in the latter half of 2023 despite relatively stable order volumes.
-The objective was to determine whether the decline was driven by:
+This project performs a **diagnostic analysis** to identify the **root causes of revenue decline** in a simulated e-commerce business using **Python, SQL, and Power BI**.
 
-Demand reduction
+The analysis follows a **consulting-style problem-solving framework**, moving systematically from  
+**symptom → diagnosis → insight → recommendation**, similar to real-world analytics and strategy engagements.
 
-Pricing & discount strategy
+---
 
-Customer behavior (new vs repeat)
+## 🎯 Business Problem
 
-Operational issues (returns, cancellations, delivery delays)
+An e-commerce company observed a **sharp decline in revenue during the latter half of 2023**, despite relatively stable order volumes.
 
-Geographic or category-level performance
+The objective of this project was to determine whether the revenue decline was driven by:
 
-🧠 Diagnostic Framework Used
+- Demand reduction  
+- Pricing or discount strategy  
+- Customer behavior (new vs repeat customers)  
+- Operational issues (returns, cancellations, delivery delays)  
+- Geographic or category-level performance  
 
-The analysis was conducted using the following structured approach:
+---
 
-Trend Analysis – Revenue & order volume over time
+## 🧠 Diagnostic Framework
 
-Customer Segmentation – New vs repeat customer contribution
+The analysis was conducted using a structured diagnostic approach:
 
-Operational Leakage – Revenue loss due to returns & cancellations
+1. **Trend Analysis**  
+   Revenue and order volume trends over time  
 
-Category Performance – Product-level revenue distribution
+2. **Customer Segmentation**  
+   Contribution of new vs repeat customers  
 
-Geographic Analysis – City-wise revenue and order concentration
+3. **Operational Leakage Analysis**  
+   Revenue loss due to returns and cancellations  
 
-Operational Efficiency – Delivery time vs order outcomes
+4. **Category Performance**  
+   Revenue distribution across product categories  
 
-🛠️ Tech Stack
+5. **Geographic Analysis**  
+   City-wise revenue and order concentration  
 
-Python – Data generation & preprocessing
+6. **Operational Efficiency**  
+   Impact of delivery time on order outcomes  
 
-Pandas / NumPy – Data manipulation
+---
 
-SQL – Diagnostic queries & aggregations
+## 🛠️ Tech Stack
 
-Power BI – Interactive dashboard & storytelling
+- **Python** – Data generation and preprocessing  
+- **Pandas / NumPy** – Data manipulation and analysis  
+- **SQL** – Diagnostic queries and aggregations  
+- **Power BI** – Interactive dashboards and storytelling  
+- **Git & GitHub** – Version control and documentation  
 
-Git & GitHub – Version control
+---
 
-📂 Project Structure
+## 📂 Project Structure
 Revenue-Decline-Diagnostic/
 │
 ├── data/
@@ -65,115 +78,100 @@ Revenue-Decline-Diagnostic/
 │
 ├── .gitignore
 └── README.md
-📊 Power BI Dashboard Preview
 
-The Power BI dashboard presents a structured, diagnostic view of revenue decline across time, customer behavior, operations, and geography.
 
-Page 1 – Executive Overview
+---
 
-Purpose: High-level snapshot for leadership to quickly understand the revenue decline.
+## 📊 Power BI Dashboard Preview
 
-Key Insights Displayed:
+The Power BI dashboard presents a **structured, diagnostic view** of revenue decline across time, customers, operations, and geography.
 
-Total Revenue
+---
 
-Total Orders
+### Page 1 – Executive Overview
 
-Average Order Value
+**Purpose:**  
+Provide leadership with a high-level snapshot of the revenue decline.
 
-Revenue Loss % (Returns & Cancellations)
-
-Monthly Revenue Trend (Jul–Dec 2023)
-
-📷 Dashboard Preview:
+**Key Metrics & Insights:**
+- Total Revenue  
+- Total Orders  
+- Average Order Value (AOV)  
+- Revenue Loss % (Returns & Cancellations)  
+- Monthly Revenue Trend (Jul–Dec 2023)
 
 ![Executive Overview](dashboard/images/page1_executive_overview.png)
 
-Page 2 – Revenue Leakage & Customer Behavior
+---
 
-Purpose: Identify where revenue is being lost and whether demand-side issues exist.
+### Page 2 – Revenue Leakage & Customer Behavior
 
-Key Insights Displayed:
+**Purpose:**  
+Identify where revenue is being lost and assess demand-side risks.
 
-Revenue by Order Status (Delivered vs Returned vs Cancelled)
-
-Revenue Contribution by Customer Type (New vs Repeat)
-
-Repeat Orders Trend by Month
-
-📷 Dashboard Preview:
+**Key Metrics & Insights:**
+- Revenue by Order Status (Delivered, Returned, Cancelled)  
+- Revenue Contribution: New vs Repeat Customers  
+- Monthly Repeat Orders Trend  
 
 ![Revenue Leakage & Customer Behavior](dashboard/images/page2_revenue_leakage.png)
 
-Page 3 – Operational & Geographic Analysis
+---
 
-Purpose: Diagnose operational inefficiencies and regional concentration risks.
+### Page 3 – Operational & Geographic Analysis
 
-Key Insights Displayed:
+**Purpose:**  
+Diagnose operational inefficiencies and regional concentration risks.
 
-Average Delivery Time by Order Status
-
-Total Revenue by City
-
-Total Orders by City
-
-Revenue Concentration Risk Across Top Cities
-
-📷 Dashboard Preview:
+**Key Metrics & Insights:**
+- Average Delivery Time by Order Status  
+- Revenue by City  
+- Orders by City  
+- Revenue Concentration Across Top Cities  
 
 ![Operational & Geographic Analysis](dashboard/images/page3_operations_geography.png)
 
-🔍 Key Insights
+---
 
-Revenue decline post-September is not demand-driven — order volumes remain relatively stable
+## 🔍 Key Insights
 
-Returns and cancellations increased, causing significant revenue leakage
+- Revenue decline post-September is **not demand-driven**; order volumes remain relatively stable  
+- **Returns and cancellations increased**, causing significant revenue leakage  
+- **Repeat customer contribution remains strong**, indicating retained customer trust  
+- Revenue is **highly concentrated in the top 3 cities**, increasing geographic risk  
+- **Longer delivery times correlate with non-delivered orders**, highlighting operational inefficiencies  
 
-Repeat customer contribution remains strong, indicating retained customer trust
+---
 
-Revenue is highly concentrated in top 3 cities, posing geographic risk
+## 💡 Business Recommendations
 
-Longer delivery times correlate with non-delivered orders, suggesting operational inefficiencies
+- Improve delivery SLAs to reduce returns and cancellations  
+- Audit operational bottlenecks introduced after September  
+- Diversify revenue sources beyond top-performing cities  
+- Review discounting strategies impacting margins  
+- Strengthen retention initiatives focused on repeat customers  
 
-💡 Business Recommendations
+---
 
-Improve delivery SLAs to reduce returns & cancellations
+## 🚀 How to Run the Project
 
-Audit post-September operational bottlenecks
+1. Run the Jupyter notebook to generate and analyze the data:
 
-Diversify revenue sources beyond top cities
+2. Open the Power BI dashboard:
 
-Review discount strategies impacting margins
+---
 
-Focus retention strategies on repeat customers
+## 📈 Skills Demonstrated
 
-🚀 How to Run the Project
+- Business problem structuring  
+- Diagnostic analytics mindset  
+- SQL-based insight generation  
+- Power BI dashboard storytelling  
+- End-to-end analytics workflow  
 
-Open and run the Jupyter notebook:
+---
 
-notebooks/01_revenue_decline_diagnostic.ipynb
+## 📬 Author
 
+**Paras Miglani**  
 
-Load the generated dataset into Power BI
-
-Open:
-
-dashboard/revenue-decline-diagnostic-dashboard.pbix
-
-📈 Skills Demonstrated
-
-Business problem structuring
-
-Diagnostic analytics mindset
-
-SQL querying for insights
-
-Power BI dashboard storytelling
-
-End-to-end analytics workflow
-
-📬 Author
-
-Paras Miglani
-B.Tech – Electronics & Communication Engineering
-Aspiring Analytics & Consulting Professional
