@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# Node (if any)
+node_modules/
